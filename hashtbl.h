@@ -1,12 +1,14 @@
 /*
     hashtbl.h
-    <your name>
-    <date>
+    Andrew J Wood
+    COP4350
+    March 29, 2017
 
-    <file documentation>
-
-    NOTE: search for "TBS" to find missing code that is required
-
+    This header file defines and implements a Hash Table class complete with HashTable iterators.
+    It is desgined to work with various hash functions (passed via template parameter as Hash function
+    object classes) and can use various entry and bucket types.
+ 
+    The code is desinged to be self-documenting.
 */
 
 #ifndef _HASHTBL_H
