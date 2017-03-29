@@ -146,79 +146,31 @@ namespace fsu
   template <typename K, typename D, class H>
   HashTableIterator<K,D,H> HashTable<K,D,H>::Insert (const K& k, const D& d)
   {
-      EntryType e(k,d);
-      Iterator i; //create Hash Table iterator
-      uint64_t hVal = hashObject_(k) % numBuckets_; //get bucket number for the key
-      
-      typename BucketType::Iterator listIter = (bucketVector_[hVal]).Includes(e);  // check to see if key is already in bucket
-      if (listIter != bucketVector_[hVal].End()) //if the key was found in the bucket
-      {
-          (*listIter).data_ = d; //update data value of corresponding entry item
-      }
-      else //the key was not found
-      {
-          bucketVector_[hVal].Insert(e); //insert the newly created entry object into the bucket
-      }
-    
-      //set the values of the HashTableIterator
-      i.tablePtr_ = this;
-      i.bucketNum_ = hVal;
-      i.bucketItr_ = listIter;
-    
+    EntryType e(k,d);
+    Iterator i;
+    // TBS
     return i;
   }
 
   template <typename K, typename D, class H>
   bool HashTable<K,D,H>::Remove (const K& k)
   {
-      EntryType e(k);
-      Iterator i;
-      uint64_t hVal = hashObject_(k) % numBuckets_;
-      
-      typename BucketType::Iterator listIter = (bucketVector_[hVal].Includes(e));
-      if (listIter != bucketVector_[hVal].End()) //if the key was found
-      {
-          bucketVector_[hVal].Remove(listIter); //remove item from corresponding list
-          return 1;
-      }
-
-      return 0; //not found
+    // TBS
+    return 0;
   }
 
   template <typename K, typename D, class H>
   bool HashTable<K,D,H>::Retrieve (const K& k, D& d) const
   {
-      EntryType e(k);
-      Iterator i;
-      uint64_t hVal = hashObject_(k) % numBuckets_;
-      
-      typename BucketType::ConstIterator listIter = (bucketVector_[hVal].Includes(e));
-      if (listIter != bucketVector_[hVal].End()) //if the key was found
-      {
-          d = (*listIter).data_; //set passed data value
-          return 1; //success
-      }
-      
-    return 0; //not found
+    // TBS
+    return 0;
   }
 
   template <typename K, typename D, class H>
   HashTableIterator<K,D,H> HashTable<K,D,H>::Includes (const K& k) const
   {
-      EntryType e(k);
-      Iterator i; //create Hash Table iterator
-      uint64_t hVal = hashObject_(k) % numBuckets_; //get bucket number for the key
-      
-      typename BucketType::ConstIterator listIter = (bucketVector_[hVal]).Includes(e);  // check to see if key is already in bucket
-      if (listIter != bucketVector_[hVal].End()) //if the key was found in the bucket
-      {
-          i.tablePtr_ = this;
-          i.bucketNum_ = hVal;
-          i.bucketItr_ = listIter;
-          return i;
-      }
-      else //the key was not found
-          return End();
+    // TBS
+    return End();
   }
 
   // ADT Associative Array
@@ -338,7 +290,7 @@ namespace fsu
       }
     }
     fsu::Swap(numBuckets_,newTable.numBuckets_);
-    bucketVector_.Swap(newTable.bucketVector_); //bucketVector_ now refers to 
+    bucketVector_.Swap(newTable.bucketVector_);
   }
 
   template <typename K, typename D, class H>
@@ -447,37 +399,15 @@ namespace fsu
   template <typename K, typename D, class H>
   HashTableIterator <K,D,H>& HashTableIterator<K,D,H>::operator ++ ()
   {
-      ++(bucketItr_); //increment bucket iterator
-      
-      if (bucketItr_ != (tablePtr_->bucketVector_[bucketNum_]).End()) //check that bucket iterator isn't at end of bucket
-      {
-          return *this;
-      }
-      else //it's at the end of the bucket
-      {
-          do
-          {
-              ++bucketNum_;
-              if (bucketNum_ >= tablePtr_->numBuckets_) //if we overshoot
-              {
-                  *this = tablePtr_->End();
-                  return *this; //return end iterator
-              }
-                  
-          }
-          while (tablePtr_->bucketVector_[bucketNum_].Empty());
-          
-          //non-empty bucket found
-          bucketItr_ = (tablePtr_->bucketVector_[bucketNum_].Begin());
-          return *this;
-      }
+    // TBS
+    return *this;
   }
-    
+
   template <typename K, typename D, class H>
   HashTableIterator <K,D,H> HashTableIterator<K,D,H>::operator ++ (int)
   {
     HashTableIterator <K,D,H> i = *this;
-    operator++();
+    operator ++();
     return i;
   }
 

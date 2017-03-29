@@ -11,9 +11,30 @@
 		98531F721E8B539B00F3F03F /* primes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98531F451E8B4F4B00F3F03F /* primes.cpp */; };
 		98531F731E8B540400F3F03F /* xstring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98531F4C1E8B4F4C00F3F03F /* xstring.cpp */; };
 		98531F741E8B541C00F3F03F /* bitvect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98531F3C1E8B4F4B00F3F03F /* bitvect.cpp */; };
+		98531F801E8B54A000F3F03F /* hashcalc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98531F331E8B459000F3F03F /* hashcalc.cpp */; };
+		98531F8C1E8B552A00F3F03F /* fhtbl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98531F321E8B459000F3F03F /* fhtbl.cpp */; };
+		98531F8D1E8B632500F3F03F /* hashfunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98531F411E8B4F4B00F3F03F /* hashfunctions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		98531F771E8B547D00F3F03F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		98531F831E8B551C00F3F03F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		98A6651E1E85ECAC00623C4C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,8 +57,8 @@
 		98531F3E1E8B4F4B00F3F03F /* compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare.h; sourceTree = "<group>"; };
 		98531F3F1E8B4F4B00F3F03F /* entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entry.h; sourceTree = "<group>"; };
 		98531F401E8B4F4B00F3F03F /* genalg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genalg.h; sourceTree = "<group>"; };
-		98531F411E8B4F4B00F3F03F /* hashfunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hashfunctions.cpp; sourceTree = "<group>"; };
-		98531F421E8B4F4B00F3F03F /* hashfunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashfunctions.h; sourceTree = "<group>"; };
+		98531F411E8B4F4B00F3F03F /* hashfunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hashfunctions.cpp; path = ../hashfunctions.cpp; sourceTree = "<group>"; };
+		98531F421E8B4F4B00F3F03F /* hashfunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hashfunctions.h; path = ../hashfunctions.h; sourceTree = "<group>"; };
 		98531F431E8B4F4B00F3F03F /* list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = list.cpp; sourceTree = "<group>"; };
 		98531F441E8B4F4B00F3F03F /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
 		98531F451E8B4F4B00F3F03F /* primes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = primes.cpp; sourceTree = "<group>"; };
@@ -50,16 +71,34 @@
 		98531F4C1E8B4F4C00F3F03F /* xstring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xstring.cpp; sourceTree = "<group>"; };
 		98531F4D1E8B4F4C00F3F03F /* xstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xstring.h; sourceTree = "<group>"; };
 		98531F551E8B4F8500F3F03F /* pair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pair.h; sourceTree = "<group>"; };
-		98531F561E8B513200F3F03F /* hashclasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashclasses.h; sourceTree = "<group>"; };
+		98531F561E8B513200F3F03F /* hashclasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hashclasses.h; path = ../hashclasses.h; sourceTree = "<group>"; };
 		98531F591E8B51D400F3F03F /* vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector.cpp; sourceTree = "<group>"; };
 		98531F5B1E8B520900F3F03F /* list_macro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = list_macro.cpp; sourceTree = "<group>"; };
 		98531F5C1E8B520900F3F03F /* list_sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = list_sort.cpp; sourceTree = "<group>"; };
 		98531F5F1E8B528000F3F03F /* timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timer.cpp; sourceTree = "<group>"; };
 		98531F601E8B528000F3F03F /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
-		98A665201E85ECAC00623C4C /* FSU HashTables */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "FSU HashTables"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98531F791E8B547D00F3F03F /* HashTable Calc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "HashTable Calc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98531F851E8B551C00F3F03F /* HashTable fhtbl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "HashTable fhtbl"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98531F8E1E8C550500F3F03F /* randata.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = randata.out; path = ../randata.out; sourceTree = "<group>"; };
+		98531F8F1E8C5F9600F3F03F /* hashtbl.start */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hashtbl.start; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		98A665201E85ECAC00623C4C /* HasTable Eval */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "HasTable Eval"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		98531F761E8B547D00F3F03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98531F821E8B551C00F3F03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98A6651D1E85ECAC00623C4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,20 +112,18 @@
 		98531F3B1E8B460300F3F03F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				98531F8F1E8C5F9600F3F03F /* hashtbl.start */,
 				98531F5F1E8B528000F3F03F /* timer.cpp */,
 				98531F601E8B528000F3F03F /* timer.h */,
 				98531F5B1E8B520900F3F03F /* list_macro.cpp */,
 				98531F5C1E8B520900F3F03F /* list_sort.cpp */,
 				98531F591E8B51D400F3F03F /* vector.cpp */,
-				98531F561E8B513200F3F03F /* hashclasses.h */,
 				98531F551E8B4F8500F3F03F /* pair.h */,
 				98531F3C1E8B4F4B00F3F03F /* bitvect.cpp */,
 				98531F3D1E8B4F4B00F3F03F /* bitvect.h */,
 				98531F3E1E8B4F4B00F3F03F /* compare.h */,
 				98531F3F1E8B4F4B00F3F03F /* entry.h */,
 				98531F401E8B4F4B00F3F03F /* genalg.h */,
-				98531F411E8B4F4B00F3F03F /* hashfunctions.cpp */,
-				98531F421E8B4F4B00F3F03F /* hashfunctions.h */,
 				98531F431E8B4F4B00F3F03F /* list.cpp */,
 				98531F441E8B4F4B00F3F03F /* list.h */,
 				98531F451E8B4F4B00F3F03F /* primes.cpp */,
@@ -114,7 +151,9 @@
 		98A665211E85ECAC00623C4C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98A665201E85ECAC00623C4C /* FSU HashTables */,
+				98A665201E85ECAC00623C4C /* HasTable Eval */,
+				98531F791E8B547D00F3F03F /* HashTable Calc */,
+				98531F851E8B551C00F3F03F /* HashTable fhtbl */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +161,10 @@
 		98A665221E85ECAC00623C4C /* FSU HashTables */ = {
 			isa = PBXGroup;
 			children = (
+				98531F8E1E8C550500F3F03F /* randata.out */,
+				98531F561E8B513200F3F03F /* hashclasses.h */,
+				98531F411E8B4F4B00F3F03F /* hashfunctions.cpp */,
+				98531F421E8B4F4B00F3F03F /* hashfunctions.h */,
 				98531F321E8B459000F3F03F /* fhtbl.cpp */,
 				98531F331E8B459000F3F03F /* hashcalc.cpp */,
 				98531F341E8B459000F3F03F /* hasheval.cpp */,
@@ -134,9 +177,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		98A6651F1E85ECAC00623C4C /* FSU HashTables */ = {
+		98531F781E8B547D00F3F03F /* HashTable Calc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98A665271E85ECAC00623C4C /* Build configuration list for PBXNativeTarget "FSU HashTables" */;
+			buildConfigurationList = 98531F7D1E8B547D00F3F03F /* Build configuration list for PBXNativeTarget "HashTable Calc" */;
+			buildPhases = (
+				98531F751E8B547D00F3F03F /* Sources */,
+				98531F761E8B547D00F3F03F /* Frameworks */,
+				98531F771E8B547D00F3F03F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HashTable Calc";
+			productName = "HashTable Calc";
+			productReference = 98531F791E8B547D00F3F03F /* HashTable Calc */;
+			productType = "com.apple.product-type.tool";
+		};
+		98531F841E8B551C00F3F03F /* HashTable fhtbl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98531F891E8B551C00F3F03F /* Build configuration list for PBXNativeTarget "HashTable fhtbl" */;
+			buildPhases = (
+				98531F811E8B551C00F3F03F /* Sources */,
+				98531F821E8B551C00F3F03F /* Frameworks */,
+				98531F831E8B551C00F3F03F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HashTable fhtbl";
+			productName = "HashTable fhtbl";
+			productReference = 98531F851E8B551C00F3F03F /* HashTable fhtbl */;
+			productType = "com.apple.product-type.tool";
+		};
+		98A6651F1E85ECAC00623C4C /* HasTable Eval */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98A665271E85ECAC00623C4C /* Build configuration list for PBXNativeTarget "HasTable Eval" */;
 			buildPhases = (
 				98A6651C1E85ECAC00623C4C /* Sources */,
 				98A6651D1E85ECAC00623C4C /* Frameworks */,
@@ -146,9 +223,9 @@
 			);
 			dependencies = (
 			);
-			name = "FSU HashTables";
+			name = "HasTable Eval";
 			productName = "FSU HashTables";
-			productReference = 98A665201E85ECAC00623C4C /* FSU HashTables */;
+			productReference = 98A665201E85ECAC00623C4C /* HasTable Eval */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -160,6 +237,14 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = FSU;
 				TargetAttributes = {
+					98531F781E8B547D00F3F03F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					98531F841E8B551C00F3F03F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					98A6651F1E85ECAC00623C4C = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
@@ -178,16 +263,35 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				98A6651F1E85ECAC00623C4C /* FSU HashTables */,
+				98A6651F1E85ECAC00623C4C /* HasTable Eval */,
+				98531F781E8B547D00F3F03F /* HashTable Calc */,
+				98531F841E8B551C00F3F03F /* HashTable fhtbl */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		98531F751E8B547D00F3F03F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98531F801E8B54A000F3F03F /* hashcalc.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98531F811E8B551C00F3F03F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98531F8C1E8B552A00F3F03F /* fhtbl.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98A6651C1E85ECAC00623C4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98531F8D1E8B632500F3F03F /* hashfunctions.cpp in Sources */,
 				98531F741E8B541C00F3F03F /* bitvect.cpp in Sources */,
 				98531F731E8B540400F3F03F /* xstring.cpp in Sources */,
 				98531F721E8B539B00F3F03F /* primes.cpp in Sources */,
@@ -198,6 +302,34 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		98531F7E1E8B547D00F3F03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		98531F7F1E8B547D00F3F03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		98531F8A1E8B551C00F3F03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		98531F8B1E8B551C00F3F03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		98A665251E85ECAC00623C4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -304,6 +436,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		98531F7D1E8B547D00F3F03F /* Build configuration list for PBXNativeTarget "HashTable Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98531F7E1E8B547D00F3F03F /* Debug */,
+				98531F7F1E8B547D00F3F03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		98531F891E8B551C00F3F03F /* Build configuration list for PBXNativeTarget "HashTable fhtbl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98531F8A1E8B551C00F3F03F /* Debug */,
+				98531F8B1E8B551C00F3F03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		98A6651B1E85ECAC00623C4C /* Build configuration list for PBXProject "FSU HashTables" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -313,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98A665271E85ECAC00623C4C /* Build configuration list for PBXNativeTarget "FSU HashTables" */ = {
+		98A665271E85ECAC00623C4C /* Build configuration list for PBXNativeTarget "HasTable Eval" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98A665281E85ECAC00623C4C /* Debug */,

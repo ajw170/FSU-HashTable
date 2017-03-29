@@ -4,14 +4,34 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>HashTable Calc.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
 		<key>HashTable Eval.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>17</integer>
 		</dict>
+		<key>HashTable fhtbl.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>98531F781E8B547D00F3F03F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>98531F841E8B551C00F3F03F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>98A6651F1E85ECAC00623C4C</key>
 		<dict>
 			<key>primary</key>

@@ -101,7 +101,7 @@ int main(int argc, char* argv[])
   }
 
   size_t numbuckets = atoi(argv[1]);
-  HashType hfo;
+  HashType hfo; //creates function object
   HashTableType * tablePtr = new HashTableType(numbuckets, hfo, prime);
 
   KeyType k;
