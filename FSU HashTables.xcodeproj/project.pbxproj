@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		98A665241E85ECAC00623C4C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98A665231E85ECAC00623C4C /* main.cpp */; };
+		98531F391E8B459000F3F03F /* hasheval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98531F341E8B459000F3F03F /* hasheval.cpp */; };
+		98531F721E8B539B00F3F03F /* primes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98531F451E8B4F4B00F3F03F /* primes.cpp */; };
+		98531F731E8B540400F3F03F /* xstring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98531F4C1E8B4F4C00F3F03F /* xstring.cpp */; };
+		98531F741E8B541C00F3F03F /* bitvect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98531F3C1E8B4F4B00F3F03F /* bitvect.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,37 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		98531F321E8B459000F3F03F /* fhtbl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fhtbl.cpp; path = ../fhtbl.cpp; sourceTree = "<group>"; };
+		98531F331E8B459000F3F03F /* hashcalc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hashcalc.cpp; path = ../hashcalc.cpp; sourceTree = "<group>"; };
+		98531F341E8B459000F3F03F /* hasheval.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hasheval.cpp; path = ../hasheval.cpp; sourceTree = "<group>"; };
+		98531F351E8B459000F3F03F /* hashtbl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hashtbl.h; path = ../hashtbl.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		98531F361E8B459000F3F03F /* rantable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rantable.cpp; path = ../rantable.cpp; sourceTree = "<group>"; };
+		98531F3C1E8B4F4B00F3F03F /* bitvect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bitvect.cpp; sourceTree = "<group>"; };
+		98531F3D1E8B4F4B00F3F03F /* bitvect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitvect.h; sourceTree = "<group>"; };
+		98531F3E1E8B4F4B00F3F03F /* compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare.h; sourceTree = "<group>"; };
+		98531F3F1E8B4F4B00F3F03F /* entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entry.h; sourceTree = "<group>"; };
+		98531F401E8B4F4B00F3F03F /* genalg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genalg.h; sourceTree = "<group>"; };
+		98531F411E8B4F4B00F3F03F /* hashfunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hashfunctions.cpp; sourceTree = "<group>"; };
+		98531F421E8B4F4B00F3F03F /* hashfunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashfunctions.h; sourceTree = "<group>"; };
+		98531F431E8B4F4B00F3F03F /* list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = list.cpp; sourceTree = "<group>"; };
+		98531F441E8B4F4B00F3F03F /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		98531F451E8B4F4B00F3F03F /* primes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = primes.cpp; sourceTree = "<group>"; };
+		98531F461E8B4F4B00F3F03F /* primes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primes.h; sourceTree = "<group>"; };
+		98531F471E8B4F4B00F3F03F /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		98531F481E8B4F4B00F3F03F /* xran.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xran.cpp; sourceTree = "<group>"; };
+		98531F491E8B4F4B00F3F03F /* xran.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xran.h; sourceTree = "<group>"; };
+		98531F4A1E8B4F4B00F3F03F /* xranxstr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xranxstr.cpp; sourceTree = "<group>"; };
+		98531F4B1E8B4F4B00F3F03F /* xranxstr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xranxstr.h; sourceTree = "<group>"; };
+		98531F4C1E8B4F4C00F3F03F /* xstring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xstring.cpp; sourceTree = "<group>"; };
+		98531F4D1E8B4F4C00F3F03F /* xstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xstring.h; sourceTree = "<group>"; };
+		98531F551E8B4F8500F3F03F /* pair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pair.h; sourceTree = "<group>"; };
+		98531F561E8B513200F3F03F /* hashclasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashclasses.h; sourceTree = "<group>"; };
+		98531F591E8B51D400F3F03F /* vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector.cpp; sourceTree = "<group>"; };
+		98531F5B1E8B520900F3F03F /* list_macro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = list_macro.cpp; sourceTree = "<group>"; };
+		98531F5C1E8B520900F3F03F /* list_sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = list_sort.cpp; sourceTree = "<group>"; };
+		98531F5F1E8B528000F3F03F /* timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timer.cpp; sourceTree = "<group>"; };
+		98531F601E8B528000F3F03F /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
 		98A665201E85ECAC00623C4C /* FSU HashTables */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "FSU HashTables"; sourceTree = BUILT_PRODUCTS_DIR; };
-		98A665231E85ECAC00623C4C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +70,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98531F3B1E8B460300F3F03F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98531F5F1E8B528000F3F03F /* timer.cpp */,
+				98531F601E8B528000F3F03F /* timer.h */,
+				98531F5B1E8B520900F3F03F /* list_macro.cpp */,
+				98531F5C1E8B520900F3F03F /* list_sort.cpp */,
+				98531F591E8B51D400F3F03F /* vector.cpp */,
+				98531F561E8B513200F3F03F /* hashclasses.h */,
+				98531F551E8B4F8500F3F03F /* pair.h */,
+				98531F3C1E8B4F4B00F3F03F /* bitvect.cpp */,
+				98531F3D1E8B4F4B00F3F03F /* bitvect.h */,
+				98531F3E1E8B4F4B00F3F03F /* compare.h */,
+				98531F3F1E8B4F4B00F3F03F /* entry.h */,
+				98531F401E8B4F4B00F3F03F /* genalg.h */,
+				98531F411E8B4F4B00F3F03F /* hashfunctions.cpp */,
+				98531F421E8B4F4B00F3F03F /* hashfunctions.h */,
+				98531F431E8B4F4B00F3F03F /* list.cpp */,
+				98531F441E8B4F4B00F3F03F /* list.h */,
+				98531F451E8B4F4B00F3F03F /* primes.cpp */,
+				98531F461E8B4F4B00F3F03F /* primes.h */,
+				98531F471E8B4F4B00F3F03F /* vector.h */,
+				98531F481E8B4F4B00F3F03F /* xran.cpp */,
+				98531F491E8B4F4B00F3F03F /* xran.h */,
+				98531F4A1E8B4F4B00F3F03F /* xranxstr.cpp */,
+				98531F4B1E8B4F4B00F3F03F /* xranxstr.h */,
+				98531F4C1E8B4F4C00F3F03F /* xstring.cpp */,
+				98531F4D1E8B4F4C00F3F03F /* xstring.h */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
 		98A665171E85ECAC00623C4C = {
 			isa = PBXGroup;
 			children = (
+				98531F3B1E8B460300F3F03F /* Support Files */,
 				98A665221E85ECAC00623C4C /* FSU HashTables */,
 				98A665211E85ECAC00623C4C /* Products */,
 			);
@@ -57,7 +122,11 @@
 		98A665221E85ECAC00623C4C /* FSU HashTables */ = {
 			isa = PBXGroup;
 			children = (
-				98A665231E85ECAC00623C4C /* main.cpp */,
+				98531F321E8B459000F3F03F /* fhtbl.cpp */,
+				98531F331E8B459000F3F03F /* hashcalc.cpp */,
+				98531F341E8B459000F3F03F /* hasheval.cpp */,
+				98531F351E8B459000F3F03F /* hashtbl.h */,
+				98531F361E8B459000F3F03F /* rantable.cpp */,
 			);
 			path = "FSU HashTables";
 			sourceTree = "<group>";
@@ -119,7 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98A665241E85ECAC00623C4C /* main.cpp in Sources */,
+				98531F741E8B541C00F3F03F /* bitvect.cpp in Sources */,
+				98531F731E8B540400F3F03F /* xstring.cpp in Sources */,
+				98531F721E8B539B00F3F03F /* primes.cpp in Sources */,
+				98531F391E8B459000F3F03F /* hasheval.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +241,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = "-I$(PROJECT_DIR)";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -209,6 +282,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = "-I$(PROJECT_DIR)";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -246,6 +320,7 @@
 				98A665291E85ECAC00623C4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
