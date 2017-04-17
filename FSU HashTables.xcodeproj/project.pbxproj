@@ -443,6 +443,7 @@
 				98531F7F1E8B547D00F3F03F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98531F891E8B551C00F3F03F /* Build configuration list for PBXNativeTarget "HashTable fhtbl" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +452,7 @@
 				98531F8B1E8B551C00F3F03F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98A6651B1E85ECAC00623C4C /* Build configuration list for PBXProject "FSU HashTables" */ = {
 			isa = XCConfigurationList;
